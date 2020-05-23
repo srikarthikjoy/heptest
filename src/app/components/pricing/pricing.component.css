@@ -1,0 +1,40 @@
+.priced .pricetag {
+  color: #ed4947;
+}
+.priced {
+  text-align: center;
+  border: 1px solid #ddd;
+  padding: 20px;
+  border-radius: 7px;
+  background-color: #fff;
+}
+.priced button {
+  border-radius: 50px;
+  border: 1px solid #ed4947;
+  background-color: #ffffff;
+  padding: 10px 20px;
+  color: #ed4947;
+}
+.top-recomended {
+  border-top: 30px solid #ed4947;
+  border-radius: 7px;
+}
+.top-recomended button {
+  background-color: #ed4947;
+  color: #fff;
+}
+.top-recomended .priced {
+  margin-top: -4px;
+}
+.top-recomended::before {
+  content: "Recommended";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  color: #fff;
+}

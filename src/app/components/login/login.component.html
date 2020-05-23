@@ -1,0 +1,46 @@
+<div class="login-container">
+    <div class="d-flex justify-content-center">
+        <div>
+            <div appCard class="mt-5 icon-mark">
+                <img src="../../assets/face-24px.svg">
+            </div>
+        </div>
+        <div>
+            <div appCard class="mt-5">
+                <p class="m-0">Hey there! Welcome back. You can login to view your dashboard</p>
+            </div>
+            <div appCard class="mt-3">
+                <h2>Login</h2>
+                <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+                    <div class="form-group">
+                        <label for="username">Your Email</label>
+                        <input type="text" formControlName="username" class="form-control"
+                            [ngClass]="{ 'is-invalid': submitted && f.username.errors }" placeholder="Email" />
+                        <div *ngIf="submitted && f.username.errors" class="invalid-feedback">
+                            <div *ngIf="f.username.errors.required">Email is required</div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="password">Your Password</label>
+                        <input type="password" formControlName="password" class="form-control"
+                            [ngClass]="{ 'is-invalid': submitted && f.password.errors }" placeholder="password" />
+                        <div *ngIf="submitted && f.password.errors" class="invalid-feedback">
+                            <div *ngIf="f.password.errors.required">Password is required</div>
+                        </div>
+                    </div>
+                    <div class="forgot-password">
+                        <p>Forgot your password? <a href="" class="link-active">Click here</a></p>
+                    </div>
+                    <div class="form-group">
+                        <button [disabled]="loading" class="btn primary">
+                            Login
+                        </button>
+                    </div>
+                    <div class="forgot-password">
+                        <p>Dont have an account? <a href="" class="link-active">Sign Up for a free trail</a></p>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

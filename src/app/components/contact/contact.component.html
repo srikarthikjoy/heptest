@@ -1,0 +1,42 @@
+<form [formGroup]="contactForm">
+    <div class="container">
+        <h1 class="text-center">
+            Contact us
+        </h1>
+        <div class="row">
+            <div class="col-sm">
+                <div class="form-group">
+                    <label for="name">Your Name</label>
+                    <input type="text" formControlName="name" class="form-control" />
+                </div>
+                <div class="form-group">
+                    <label for="company">Your Company</label>
+                    <input type="text" formControlName="company" class="form-control" />
+                </div>
+            </div>
+            <div class="col-sm">
+                <div class="form-group">
+                    <label for="email">Your Company Email</label>
+                    <input type="text" formControlName="email" class="form-control" />
+                </div>
+                <div class="form-group">
+                    <label for="phone">Your Phone</label>
+                    <input type="text" formControlName="phone" class="form-control" />
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="form-group">
+                    <label for="phone">Your Phone</label>
+                    <textarea class="form-control" formControlName="comments"></textarea>
+                </div>
+                <div class="form-group">
+                    <button class="btn primary text-center">
+                        Submit
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</form>

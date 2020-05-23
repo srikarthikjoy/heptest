@@ -1,0 +1,19 @@
+.login-container {
+  width: 800px;
+  margin: auto;
+}
+.primary {
+  background-color: #ed4947;
+  color: #ffffff;
+  width: 100%;
+}
+.link-active {
+  color: #ed4947;
+}
+.forgot-password {
+  color: #ababab;
+}
+.icon-mark {
+  border-radius: 50%;
+  color: #ed4947;
+}

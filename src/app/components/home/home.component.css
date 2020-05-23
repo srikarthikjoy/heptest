@@ -1,0 +1,40 @@
+.nav-class {
+  justify-content: flex-end;
+}
+.navbar-brand img {
+  width: 120px;
+}
+.log-in {
+  background-color: transparent;
+  border: 1px solid #ddd;
+  padding: 7px;
+  border-radius: 5px;
+}
+.bg-light {
+  background-color: #ffffff !important;
+}
+.nav-item a {
+  padding: 8px 15px;
+}
+.trail-content {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+.primary {
+  background-color: #ed4947;
+  color: #ffffff;
+  padding: 5px 55px;
+  margin-top: 20px;
+}
+.h1-font {
+  font-size: 60px;
+}
+.banner-sec {
+  margin-top: 50px;
+}
+.trail-content .p {
+  color: #ddd;
+  font-size: 12px;
+}
